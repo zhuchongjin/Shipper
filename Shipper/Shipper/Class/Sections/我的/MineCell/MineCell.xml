@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:clear">
+
+    <UIView layout="@:CJView/WrapLabView ,@:CJDis/LRFifteen" attr="@:CJView/CornerFive ,bgColor:white">
+        <UIView layout="width:30.5 ,height:100% ,justifyContent:center ,alignContent:center ,@:CJDis/LFifteen" attr="">
+            <UIImageView name = "imgVTitle" layout="width:30 ,height:30" attr=""/>
+        </UIView>
+        <UILabel name="labTitle" layout="flex:1,@:CJDis/LFifteen" attr="@:CJView/LabelBase"/>
+        <UIView layout="@:CJDis/LRFifteen ,width:8 ,height:100% ,justifyContent:center ,alignContent:center" attr="">
+            <UIImageView layout="width:6 ,height:11"  attr="source:zcj_back_rigt_gray"/>
+        </UIView>
+        <!-- <UIView layout="width:20 ,height:100% ,justifyContent:center ,alignContent;center ,marginLeft:10" attr="">
+            <UIImageView name = "imgVAouth" layout="width:20 ,height:20" attr="source:zcj_aouth_error"/>
+        </UIView> -->
+        <!-- <UILabel name="labDetail" layout="flex:1 ,marginLeft:10" attr="@:view/CJLabelSubBase ,fontSize:15 ,textAlign:right"/> -->
+    </UIView>
+
+</UIView>

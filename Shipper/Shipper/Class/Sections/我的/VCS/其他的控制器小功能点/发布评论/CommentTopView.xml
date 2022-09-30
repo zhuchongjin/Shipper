@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:white">
+
+    <UIView layout="@:view/CJToViewMarginH" attr="@:view/CJBackgroundColor" />
+
+    <UIView layout="@:view/CJWrapView " attr="">
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel layout="" attr="@:view/CJLabelBase ,fontSize:16 ,text:服务态度 "/>
+            <CJView name = "viewStarServer" layout="@:view/CJMarginLeftTen ,height:40 ,width:150" attr="" />
+        </UIView>
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel layout="" attr="@:view/CJLabelBase ,fontSize:16 ,text:配送速度 "/>
+            <CJView name = "viewStarDelivery" layout="@:view/CJMarginLeftTen ,height:40 ,width:150" attr="" />
+        </UIView>
+
+        <FlexTextView name="" layout="@:view/CJWrapView ,minHeight:100 ,maxHeight:150" attr="@:view/CJLabelBase ,textAlign:left ,bgColor:#F3F5F8 ,bgColor:#F3F5F8 ,placeholder:说说你对本次服务的体验，帮助我们为您提供更好 的服务~"/>
+
+        <FlexTouchView onPress="btnIsAbnormalAction" layout="justifyContent:center,maxWidth:120 ,flexDirection:row" attr="">
+            <CJImageView name = "imgVAbnormal" layout = "width:14 ,aspectRatio:1" attr="source:unSelected"/>
+            <UILabel layout="width:80 ,marginLeft:10" attr="@:view/CJLabelBase,text:是否异常"/>
+        </FlexTouchView>
+
+
+        <FlexTouchView onPress="" layout="marginTop:50 ,height:45 ,justifyContent:center" attr="underlayColor:darkGray,@:view/CJMainBGColor ,@:view/CJLayerCornerRFive">
+
+                <UILabel name="" layout="flex:1" attr="@:view/CJLabelBase, color:white ,fontSize:17 ,textAlign:center ,text:保存"/>
+
+        </FlexTouchView>
+
+    
+    </UIView>
+
+
+
+</UIView>

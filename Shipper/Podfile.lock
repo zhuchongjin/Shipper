@@ -1,0 +1,108 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Bugly (2.5.93)
+  - CWLateralSlide (1.6.5)
+  - FlexLib (3.1.2):
+    - FlexLib/standard (= 3.1.2)
+  - FlexLib/standard (3.1.2):
+    - FlexLib/standard/no-arc (= 3.1.2)
+    - Yoga (= 1.14.0)
+  - FlexLib/standard/no-arc (3.1.2):
+    - Yoga (= 1.14.0)
+  - IQKeyboardManager (6.5.10)
+  - JCore (3.2.5)
+  - JPush (4.8.1):
+    - JCore (>= 2.0.0)
+  - MJRefresh (3.7.5)
+  - ReactiveObjC (3.1.1)
+  - SAMKeychain (1.5.3)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.13.4):
+    - SDWebImage/Core (= 5.13.4)
+  - SDWebImage/Core (5.13.4)
+  - SVProgressHUD (2.2.5)
+  - WMPageController (2.5.2)
+  - WZLBadge (1.2.6)
+  - Yoga (1.14.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZWPlaceHolder (0.0.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Bugly
+  - CWLateralSlide
+  - FlexLib
+  - IQKeyboardManager
+  - JPush
+  - MJRefresh
+  - ReactiveObjC
+  - SAMKeychain
+  - SDCycleScrollView (~> 1.6)
+  - SDWebImage
+  - SVProgressHUD
+  - WMPageController
+  - WZLBadge
+  - YYKit
+  - ZWPlaceHolder
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Bugly
+    - CWLateralSlide
+    - FlexLib
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - MJRefresh
+    - ReactiveObjC
+    - SAMKeychain
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - WMPageController
+    - WZLBadge
+    - Yoga
+    - YYKit
+    - ZWPlaceHolder
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Bugly: b8715e6ec4004b7f7fbffab0643ba80545aee3da
+  CWLateralSlide: 8939c8dea91a24e40d0793553118cb57cd67f64b
+  FlexLib: 098340eaaee491d632a54d5186d5de09259839e8
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  JCore: 4c9febdfdb1a5675ab361bc1f06c0905391d7b23
+  JPush: 2caabdb6d62d009bc07a9bd115d03c7c42512b5e
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+  WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
+  Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZWPlaceHolder: d55cce10c9930b48c31bf48e7f4748974a31f7e0
+
+PODFILE CHECKSUM: eeb73bf68f8ac2b1b6483ed8264da3f44ffa967b
+
+COCOAPODS: 1.11.3

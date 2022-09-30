@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<styles>
+<!--    <style name="testVC">-->
+<!--        <attr name="flex">1</attr>-->
+<!--        <attr name="flexDirection">row</attr>-->
+<!--        <attr name="justifyContent">center</attr>-->
+<!--        <attr name="alignItems">center</attr>-->
+<!--    </style>-->
+
+<!--    <style name="testPresentVC">-->
+<!--        <attr name="flex">1</attr>-->
+<!--        <attr name="flexDirection">column</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="testPushVC">-->
+<!--        <attr name="flex">1</attr>-->
+<!--        <attr name="alignItems">center</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="headerWrapView">-->
+<!--        <attr name="padding">10</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="headerLabel">-->
+<!--        <attr name="fontSize">14</attr>-->
+<!--        <attr name="color">#666666</attr>-->
+<!--        <attr name="text">This is default header!</attr>-->
+<!--        <attr name="linesNum">0</attr>-->
+<!--        <attr name="lineBreakMode">truncatingTail</attr>-->
+<!--    </style>-->
+
+<!--    <style name="cellWrapView">-->
+<!--        <attr name="flexDirection">row</attr>-->
+<!--        <attr name="margin">50</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="icon">-->
+<!--        <attr name="width">50</attr>-->
+<!--        <attr name="height">50</attr>-->
+<!--    </style>-->
+
+
+    
+<!--    <style name="typeLabel">-->
+<!--        <attr name="fontSize">12</attr>-->
+<!--        <attr name="color">#999999</attr>-->
+<!--        <attr name="text">默认类型</attr>-->
+<!--        <attr name="linesNum">1</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="dateLabel">-->
+<!--        <attr name="fontSize">12</attr>-->
+<!--        <attr name="color">#3A425C</attr>-->
+<!--        <attr name="text">1970-1-1</attr>-->
+<!--        <attr name="linesNum">1</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="titleLabel">-->
+<!--        <attr name="fontSize">18</attr>-->
+<!--        <attr name="color">#3A425C</attr>-->
+<!--        <attr name="text">默认标题</attr>-->
+<!--        <attr name="linesNum">1</attr>-->
+<!--    </style>-->
+<!--    -->
+<!--    <style name="contentLabel">-->
+<!--        <attr name="fontSize">14</attr>-->
+<!--        <attr name="color">#666666</attr>-->
+<!--        <attr name="text">默认内容</attr>-->
+<!--        <attr name="linesNum">0</attr>-->
+<!--    </style>-->
+
+<!---->
+<!--    <style name="labTitle">-->
+<!--        <attr name="fontSize">14</attr>-->
+<!--        <attr name="color">#666666</attr>-->
+<!--        <attr name="text">默认内容</attr>-->
+<!--        <attr name="linesNum">0</attr>-->
+<!--    </style>-->
+
+<!--    <style name="baseLabel">-->
+<!--        <attr name="fontSize">15</attr>-->
+<!--        <attr name="color">red</attr>-->
+<!--        <attr name="text">默认内容</attr>-->
+<!--        <attr name="linesNum">0</attr>-->
+<!--        <attr name="bgColor">lightGray</attr>-->
+<!--        <attr name="clipsToBounds">true</attr>-->
+<!--        <attr name="cornerRadius">10</attr>-->
+<!--        <attr name="borderColor">black</attr>-->
+<!--        <attr name="borderWidth">0.5</attr>-->
+<!--    </style>-->
+<!--    -->
+
+
+<!--label的基础样式
+<attr name="clipsToBounds">true</attr>
+<attr name="layerCornerRadius">5</attr>
+
+-->
+
+
+    <!---  主题色字体 --> <!--一些基础颜色-->
+    <style name="MainColorText">
+        <attr name="color">#2D7DF6</attr>
+    </style>
+    
+    <style name="MainTextColor">
+        <attr name="color">#3A425C</attr>
+    </style>
+    
+    <style name="SubheadTextColor">
+        <attr name="color">#96A0B9</attr>
+    </style>
+    
+    <style name="ButtonColor">
+        <attr name="color">#2D7DF6</attr>
+    </style>
+    
+    <style name="MainColor">
+        <attr name="color">#2D7DF6</attr>
+    </style>
+    
+    <style name="MainBGColor">
+        <attr name="bgColor">#2D7DF6</attr>
+    </style>
+    
+    <style name="BackgroundColor">
+        <attr name="bgColor">#f3f8ff</attr>
+    </style>
+    
+    <style name="LineBackGroundColor">
+        <attr name="bgColor">#EBEBEB</attr>
+    </style>
+
+    <style name="MainBorderColor">
+        <attr name="borderColor">#2D7DF6</attr>
+    </style>
+    
+
+    
+    
+
+
+</styles>
+

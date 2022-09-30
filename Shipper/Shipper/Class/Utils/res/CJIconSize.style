@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<styles>
+
+ 
+     <!--图片尺寸 20-->
+     <style name="Twenty">
+         <attr name="width">20</attr>
+         <attr name="height">20</attr>
+     </style>
+     
+     <style name="TwentyFive">
+         <attr name="width">25</attr>
+         <attr name="height">25</attr>
+     </style>
+     
+     <style name="Thirty">
+         <attr name="width">30</attr>
+         <attr name="height">30</attr>
+     </style>
+     
+     <style name="Forty">
+         <attr name="width">40</attr>
+         <attr name="height">40</attr>
+     </style>
+     
+     <style name="Right">
+         <attr name="width">6.5</attr>
+         <attr name="height">12</attr>
+     </style>
+
+</styles>
+

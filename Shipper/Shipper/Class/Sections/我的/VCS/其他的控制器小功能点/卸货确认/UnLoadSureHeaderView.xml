@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:white">
+
+    <UIView layout="@:view/CJToViewMarginH" attr="@:view/CJBackgroundColor" />
+
+    <UIView layout="@:view/CJWrapView ,minHeight:200" attr="">
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase ,text:司机姓名"/>
+            <CJLabel name="" layout="flex:1" attr="@:view/CJLabelBase ,textAlign:right ,text:司机姓名"/>
+        </UIView>
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase ,text:司机电话"/>
+            <CJLabel name="" layout="flex:1" attr="@:view/CJLabelBase ,textAlign:right ,text:司机电话1"/>
+        </UIView>
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase ,text:车牌号"/>
+            <CJLabel name="" layout="flex:1" attr="@:view/CJLabelBase ,textAlign:right ,text:车牌号11"/>
+        </UIView>
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase ,text:卸货吨位"/>
+            <CJLabel name="" layout="flex:1" attr="@:view/CJLabelBase ,textAlign:right ,text:司机电话11111"/>
+        </UIView>
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase ,text:卸货时间"/>
+            <CJLabel name="" layout="flex:1" attr="@:view/CJLabelBase ,textAlign:right ,text:司机电话1111111"/>
+        </UIView>
+        <!-- <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" /> -->
+    </UIView>
+
+    <UIView layout="@:view/CJToViewMarginH" attr="@:view/CJBackgroundColor" />
+
+    <!-- 上传回单 -->
+    <UIView layout="@:view/CJWrapView" attr="">
+
+        <UILabel name="" layout="marginTop:15" attr="@:view/CJLabelBase,text:上传回单 ,fontSize:16"/>
+
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase,text:回单是否已收"/>
+            <UISwitch layout = "" name="switchInRecive" attr="on:true"/>
+        </UIView>
+
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase,text:回单号"/>
+            <!-- <UISwitch layout = "" name="switchInRecive" attr="on:true"/> -->
+            <CJTextField name="" layout="flex:1" attr="@:view/CJFiledBase ,placeholder:请输入回单号"/>
+        </UIView>
+
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+        <!-- 上传图片 -->
+        <UILabel layout = "" attr="@:view/CJLabDetailSub,text:注：上传后不可修改，请谨慎操作！（最多可上传9张图）"/>
+        <UIView layout="height:10"/>
+        <FlexContainerView name="_imgParent" layout="flexWrap:wrap,flexDirection:row,justifyContent:flex-start ,flex:1">
+            
+            <FlexTouchView onPress="onAddImage" layout="width:65,margin:1.5%,height:65,justifyContent:center,alignItems:center" attr="borderRadius:10,borderWidth:1,borderColor:#e5e5e5,underlayColor:#e5e5e5">
+                <UILabel attr="text:+,fontSize:20,color:#999999"/>
+            </FlexTouchView>
+
+        </FlexContainerView>
+
+    </UIView>
+
+
+    <UIView layout="@:view/CJToViewMarginH" attr="@:view/CJBackgroundColor" />
+
+    <!-- 异常上报 -->
+    <UIView layout="@:view/CJWrapView" attr="">
+
+        <UILabel name="" layout="marginTop:15" attr="@:view/CJLabelBase,text:异常上报 ,fontSize:16"/>
+
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase,text:是否异常"/>
+            <UISwitch layout = "" name="switchabnormal" attr="on:true"/>
+        </UIView>  
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase,text:备注"/>
+            <!-- <UISwitch layout = "" name="switchInRecive" attr="on:true"/> -->
+            <CJTextField name="" layout="flex:1" attr="@:view/CJFiledBase ,placeholder:请输入异常备注"/>
+        </UIView>
+        
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+
+        <UIView layout="@:view/CJWrapLabView ,flexDirection:row" attr="">
+            <UILabel name="" layout="" attr="@:view/CJLabelBase,text:异常费"/>
+            <!-- <UISwitch layout = "" name="switchInRecive" attr="on:true"/> -->
+            <CJTextField name="" layout="flex:1" attr="@:view/CJFiledBase ,placeholder:请输入异常费"/>
+        </UIView>
+
+        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+        <!-- 上传图片 -->
+        <UILabel layout = "" attr="@:view/CJLabDetailSub,text:注：上传后不可修改，请谨慎操作！（最多可上传9张图）"/>
+        <UIView layout="height:10"/>
+        <FlexContainerView name="_imgAbnormalParent" layout="flexWrap:wrap,flexDirection:row,justifyContent:flex-start ,flex:1">
+            
+            <FlexTouchView onPress="onAddAbnormalImage" layout="width:65,margin:1.5%,height:65,justifyContent:center,alignItems:center" attr="borderRadius:10,borderWidth:1,borderColor:#e5e5e5,underlayColor:#e5e5e5">
+                <UILabel attr="text:+,fontSize:20,color:#999999"/>
+            </FlexTouchView>
+
+        </FlexContainerView>
+
+    </UIView>
+
+
+    <FlexTouchView onPress="" layout="marginLeft:15 ,marginTop:15 ,marginRight:15 ,height:45 ,justifyContent:center" attr="">
+        <UIImageView layout = "flex:1" attr="source:saveBtn">
+            <UILabel name="" layout="flex:1" attr="@:view/CJLabelBase, color:white ,fontSize:17 ,textAlign:center ,text:保存"/>
+        </UIImageView>
+    </FlexTouchView>
+
+
+</UIView>

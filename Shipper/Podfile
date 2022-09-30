@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Shipper' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'YYKit'
+  pod ‘IQKeyboardManager’
+  pod 'WMPageController'
+  pod 'Bugly'
+  pod ‘SDCycleScrollView‘,‘~> 1.6‘
+  pod 'SVProgressHUD'
+  pod 'ZWPlaceHolder'
+  pod 'JPush'
+#  pod 'AMap3DMap'
+#  pod 'AMapSearch'
+#  pod 'AMapLocation'
+  pod 'ZWPlaceHolder'
+  pod 'FlexLib'
+  pod 'CWLateralSlide'
+  pod 'SAMKeychain'
+  pod 'WZLBadge'
+  pod 'ReactiveObjC'
+#  pod 'BMKLocationKit'
+
+  # Pods for Shipper
+
+  target 'ShipperTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ShipperUITests' do
+    # Pods for testing
+  end
+
+end
