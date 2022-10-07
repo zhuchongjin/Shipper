@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+
+    <UIView class="" layout="@:view/WrapViewPadding ,@:dis/TTen" attr="bgColor:white ,@:view/BorderCirLine">
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:司机姓名:"/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase ,textAlign:right"/>
+            <UIView class="" layout="justifyContent:center ,alignContent:center" attr="">
+                <FlexTouchView onPress="touchXuanZeSiJiAction" layout="@:dis/LTen" attr="@:color/MainBGColor ,@:view/CornerFive">
+                    <UILabel name="" class="" layout="marginLeft:15 ,marginTop:5 ,marginRight:15 ,marginBottom:5" attr="@:view/LabelBase ,text:请选择 ,color:white"/>
+                </FlexTouchView>
+            </UIView> 
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:手机号:"/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:车牌号:"/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <FlexTouchView onPress="touchXuanZeCheXingAction" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:车型:"/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+            <UIView layout="justifyContent:center ,alignContent:center" attr="">
+                <UIImageView layout="@:iconSize/Right ,marginLeft:10 ,marginRight:10" attr="source:zcj_back_rigt_gray"/>
+            </UIView>
+        </FlexTouchView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <FlexTouchView onPress="touchCheLiangLaiYuanAction" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:车辆来源:"/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+            <UIView layout="justifyContent:center ,alignContent:center" attr="">
+                <UIImageView layout="@:iconSize/Right ,marginLeft:10 ,marginRight:10" attr="source:zcj_back_rigt_gray"/>
+            </UIView>
+        </FlexTouchView>
+    </UIView>
+
+    <UIView class="" layout="@:view/WrapViewPadding ,@:dis/TTen" attr="bgColor:white ,@:view/BorderCirLine">
+   
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:参考价格："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:调车价格："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:现付："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text: 到付："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:油卡付："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:油卡号："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:回单付："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView  layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="" attr="@:view/LabelBase ,text:装卸费："/>
+            <UILabel name="" class="" layout="@:dis/LTen ,flex:1" attr="@:view/LabelBase  ,textAlign:right"/>
+        </UIView>
+    </UIView>
+
+
+    <UIView class="" layout="@:view/WrapViewPadding ,marginTop:40 ,alignItems:center, ,justifyContent:space-between ,flexDirection:row" attr="bgColor:clear">
+        <FlexTouchView onPress="touchZhiPaiAction" layout="width:100% ,height:45" attr="@:color/MainBGColor ,@:view/CornerFive">
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:指派 ,color:white ,fontSize:17 ,textAlign:center"/>
+        </FlexTouchView>
+      
+    </UIView>
+
+
+</UIView>

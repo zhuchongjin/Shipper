@@ -8,10 +8,7 @@
 
 #import "MineCell.h"
 @interface MineCell()
-@property (nonatomic,strong) UIImageView *imgVTitle;
 @property (nonatomic,strong) UILabel *labTitle;
-//@property (nonatomic,strong) UIImageView *imgVAouth;
-//@property (nonatomic,strong) UILabel *labDetail;
 @end
 @implementation MineCell
 
@@ -26,42 +23,9 @@
     // Configure the view for the selected state
 }
 
-- (void)setCellInfoimgVHeader:(NSString *)strImg cellTitle:(NSString *)strTitle index:(NSInteger )index isOnShowAouth:(BOOL)show{
-    
-    self.imgVTitle.image = UIImageNamed(strImg);
-    if (index == 2) {
-        self.imgVTitle.size = CGSizeMake(LW(14), LW(17));
-    }else{
-        self.imgVTitle.size = CGSizeMake(LW(17), LW(16.7));
-    }
+- (void)setCellTitle:(NSString *)strTitle{
     self.labTitle.text = strTitle;
-    // 认证状态
-//    if (index == 0) {
-//
-//        if ([CJControl getIdCardDueWarn]) {
-//            self.imgVAouth.hidden = NO;
-//        }else{
-//            self.imgVAouth.hidden = YES;
-//        }
-//    }else{
-//        self.imgVAouth.hidden = YES;
-//
-//    }
-    
-//    // 展示授权
-//    if (show) {
-////        self.labDetail.hidden = NO;
-//        self.labDetail.text = [CJControl getAccountBalanceVisafreeAuthStatus];
-//    }else{
-////        self.labDetail.hidden = YES;
-//        self.labDetail.text = @"";
-//
-//    }
-//    
-////    self.imgVTitle.image = [self imageContentWithColor:[UIColor cjMainColor] withImga:self.imgVTitle.image];
-
 }
-
 
 
 - (UIImage *)imageContentWithColor:(UIColor *)color withImga:(UIImage *)image{

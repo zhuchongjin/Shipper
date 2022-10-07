@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIView layout="flex:1,alignItems:center">
+
+    <UIImageView name = "imgVBG" layout = "width:80 ,aspectRatio:1,justifyContent:center ,alignItems:center" attr="userInteractionEnabled:true ,@:view/BorderCirLine">
+        <UIImageView name = "imgVPhotoMoRen" layout = "width:33.5 ,height:29.5" attr="source:photo_select_img_defalut"/>
+        <UIView layout="height:6" attr=""/>
+        <UILabel name="labIndexText" layout="width:100%" attr="@:view/LabDetailSub,text:人车货合照,fontSize:10 ,textAlign:center"/>
+    </UIImageView>
+
+</UIView>

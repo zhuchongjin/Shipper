@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+    <UIView class="" layout="@:view/WrapView ,flexDirection:row" attr="">
+        <UITextField name="tfSearch" class="" layout="flex:1 ,@:dis/RTen ,minHeight:35" attr="@:view/FiledBaseLeft ,textAlign:center ,@:view/BorderCirLine ,placeholder:请输入内容 ,bgColor:white"/>
+        <FlexTouchView onPress="touchSearchInfoAction" layout="@:dis/LTen ,width:40 ,height:100%" attr="underlayColor:darkGray,bgColor:lightGray">
+        
+        </FlexTouchView>
+
+    </UIView>
+</UIView>

@@ -2,7 +2,7 @@
 //  WidthAndHeight.h
 //  临沂
 //
-//  Created by zcj on 2017/11/7.
+//  Created by admin on 2017/11/7.
 //  Copyright © 2017 xiaoruiyun.com. All rights reserved.
 //
 
@@ -26,11 +26,18 @@
 #define kNavBarHeight   self.navigationController.navigationBar.frame.size.height  //44.0
 #define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 #define kTopHeight (kStatusBarHeight + kNavBarHeight)
+//#define kBottomSafeHeight  [[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom
+// 底部安全距离 iOS11 之后的api
+#define kBottomSafeHeight \
+({CGFloat h = 0;\
+    if (@available(iOS 11.0, *)) {\
+        h = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom;\
+    }\
+(h);})
 
 //根据ip6的屏幕来拉伸
 #define LW(with) ((with)*(kScreenWidth/375.0f))
 #define LH(height) ((height)*(kScreenHeight/667.0f))
-#define SafeAreaBottomHeight (SCREEN_HEIGHT == 812.0 ? 34 : 0)
 #define TabBarHeight 49
 
 // 操作系统版本号
@@ -42,16 +49,16 @@
 #define IS_DEVICE_LANDSCAPE UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])
 
 // 屏幕宽度，跟横竖屏无关
-#define DEVICE_WIDTH (IOS_VERSION >= 8.0 ? (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width) : [[UIScreen mainScreen] bounds].size.width)
+//#define DEVICE_WIDTH (IOS_VERSION >= 8.0 ? (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width) : [[UIScreen mainScreen] bounds].size.width)
 
 // 屏幕高度，跟横竖屏无关
-#define DEVICE_HEIGHT (IOS_VERSION >= 8.0 ? (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height) : [[UIScreen mainScreen] bounds].size.height)
+//#define DEVICE_HEIGHT (IOS_VERSION >= 8.0 ? (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height) : [[UIScreen mainScreen] bounds].size.height)
 
 // 屏幕高度，会根据横竖屏的变化而变化
-#define SCREEN_HEIGHT (IOS_VERSION >= 8.0 ? [[UIScreen mainScreen] bounds].size.height : (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height))
+//#define SCREEN_HEIGHT (IOS_VERSION >= 8.0 ? [[UIScreen mainScreen] bounds].size.height : (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height))
 
 // 屏幕宽度，会根据横竖屏的变化而变化
-#define SCREEN_WIDTH (IOS_VERSION >= 8.0 ? [[UIScreen mainScreen] bounds].size.width : (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width))
+//#define SCREEN_WIDTH (IOS_VERSION >= 8.0 ? [[UIScreen mainScreen] bounds].size.width : (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width))
 
 // 设备屏幕尺寸
 #define IS_55INCH_SCREEN [QMUIHelper is55InchScreen]

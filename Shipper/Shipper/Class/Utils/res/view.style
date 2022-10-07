@@ -1,112 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <styles>
-<!--    <style name="testVC">-->
-<!--        <attr name="flex">1</attr>-->
-<!--        <attr name="flexDirection">row</attr>-->
-<!--        <attr name="justifyContent">center</attr>-->
-<!--        <attr name="alignItems">center</attr>-->
-<!--    </style>-->
-
-<!--    <style name="testPresentVC">-->
-<!--        <attr name="flex">1</attr>-->
-<!--        <attr name="flexDirection">column</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="testPushVC">-->
-<!--        <attr name="flex">1</attr>-->
-<!--        <attr name="alignItems">center</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="headerWrapView">-->
-<!--        <attr name="padding">10</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="headerLabel">-->
-<!--        <attr name="fontSize">14</attr>-->
-<!--        <attr name="color">#666666</attr>-->
-<!--        <attr name="text">This is default header!</attr>-->
-<!--        <attr name="linesNum">0</attr>-->
-<!--        <attr name="lineBreakMode">truncatingTail</attr>-->
-<!--    </style>-->
-
-<!--    <style name="cellWrapView">-->
-<!--        <attr name="flexDirection">row</attr>-->
-<!--        <attr name="margin">50</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="icon">-->
-<!--        <attr name="width">50</attr>-->
-<!--        <attr name="height">50</attr>-->
-<!--    </style>-->
 
 
-    
-<!--    <style name="typeLabel">-->
-<!--        <attr name="fontSize">12</attr>-->
-<!--        <attr name="color">#999999</attr>-->
-<!--        <attr name="text">默认类型</attr>-->
-<!--        <attr name="linesNum">1</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="dateLabel">-->
-<!--        <attr name="fontSize">12</attr>-->
-<!--        <attr name="color">#3A425C</attr>-->
-<!--        <attr name="text">1970-1-1</attr>-->
-<!--        <attr name="linesNum">1</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="titleLabel">-->
-<!--        <attr name="fontSize">18</attr>-->
-<!--        <attr name="color">#3A425C</attr>-->
-<!--        <attr name="text">默认标题</attr>-->
-<!--        <attr name="linesNum">1</attr>-->
-<!--    </style>-->
-<!--    -->
-<!--    <style name="contentLabel">-->
-<!--        <attr name="fontSize">14</attr>-->
-<!--        <attr name="color">#666666</attr>-->
-<!--        <attr name="text">默认内容</attr>-->
-<!--        <attr name="linesNum">0</attr>-->
-<!--    </style>-->
-
-<!---->
-<!--    <style name="labTitle">-->
-<!--        <attr name="fontSize">14</attr>-->
-<!--        <attr name="color">#666666</attr>-->
-<!--        <attr name="text">默认内容</attr>-->
-<!--        <attr name="linesNum">0</attr>-->
-<!--    </style>-->
-
-<!--    <style name="baseLabel">-->
-<!--        <attr name="fontSize">15</attr>-->
-<!--        <attr name="color">red</attr>-->
-<!--        <attr name="text">默认内容</attr>-->
-<!--        <attr name="linesNum">0</attr>-->
-<!--        <attr name="bgColor">lightGray</attr>-->
-<!--        <attr name="clipsToBounds">true</attr>-->
-<!--        <attr name="cornerRadius">10</attr>-->
-<!--        <attr name="borderColor">black</attr>-->
-<!--        <attr name="borderWidth">0.5</attr>-->
-<!--    </style>-->
-<!--    -->
-
-
-<!--label的基础样式
-<attr name="clipsToBounds">true</attr>
-<attr name="layerCornerRadius">5</attr>
-
--->
-
-
-    <style name="CJLabelBase">
+    <style name="LabelBase">
         <attr name="fontSize">14</attr>
         <attr name="color">#3A425C</attr>
         <attr name="textAlign">left</attr>
         <attr name="linesNum">0</attr>
     </style>
 
-    <style name="CJLabelSubBase">
+    <style name="LabelSubBase">
         <attr name="fontSize">14</attr>
         <attr name="color">#96A0B9</attr>
         <attr name="textAlign">left</attr>
@@ -114,7 +18,7 @@
     </style>
         
     <!--    详情里面 13 主色调 -->
-    <style name="CJLabDetailMain">
+    <style name="LabDetailMain">
         <attr name="fontSize">13</attr>
         <attr name="color">#3A425C</attr>
         <attr name="textAlign">left</attr>
@@ -122,7 +26,7 @@
     </style>
     
     <!--    详情里面 二级 次级颜色 -->
-    <style name="CJLabDetailSub">
+    <style name="LabDetailSub">
         <attr name="fontSize">13</attr>
         <attr name="color">#96A0B9</attr>
         <attr name="textAlign">left</attr>
@@ -130,316 +34,167 @@
     </style>
     
     <!--   基础输入框field  -->
-    <style name="CJFiledBase">
+    <style name="FiledBase">
         <attr name="fontSize">14</attr>
         <attr name="color">#3A425C</attr>
         <attr name="textAlign">right</attr>
     </style>
     
     <!--   基础输入框field  -->
-    <style name="CJFiledLeftBase">
+    <style name="FiledBaseLeft">
         <attr name="fontSize">14</attr>
         <attr name="color">#3A425C</attr>
         <attr name="textAlign">left</attr>
     </style>
     <!--   基础输入框TextView -->
-    <style name="CJTextViewBase">
+    <style name="TextViewBase">
         <attr name="fontSize">14</attr>
         <attr name="color">#3A425C</attr>
         <attr name="textAlign">left</attr>
-        <attr name="maxHeight">50</attr>
     </style>
     
-
     <!---   -->
-    <style name="CJWrapView">
-        <attr name="paddingLeft">15</attr>
-        <attr name="paddingRight">15</attr>
+    <style name="WrapView">
+        <attr name="marginLeft">15</attr>
+        <attr name="marginRight">15</attr>
         <attr name="marginTop">10</attr>
         <attr name="marginBottom">10</attr>
     </style>
+<!--   配合切线使用 -->
+    <style name="WrapViewPadding">
+        <attr name="marginLeft">15</attr>
+        <attr name="marginRight">15</attr>
+        <attr name="paddingTop">10</attr>
+        <attr name="paddingBottom">10</attr>
+        <attr name="marginBottom">10</attr>
+        <attr name="paddingLeft">10</attr>
+        <attr name="paddingRight">10</attr>
+    </style>
     
-    
-    <style name="CJWrapViewMid">
+    <style name="WrapViewMid">
         <attr name="paddingLeft">15</attr>
         <attr name="paddingRight">15</attr>
        <!---  <attr name="marginTop">10</attr>-->
         <attr name="marginBottom">10</attr>
     </style>
     
-    
-       <!--- 内部布局的 lab 父类   -->
-    <style name="CJWrapLabView">
+<!--   普通 上线距离-->
+    <style name="WrapTBView">
         <attr name="marginTop">10</attr>
         <attr name="marginBottom">10</attr>
-        <attr name="minHeight">20</attr>
+        <attr name="flex">1</attr>
+        <attr name="flexDirection">row</attr>
+    </style>
+    
+        <!--- 内部布局的 lab水平布局用于分块布局  -->
+<!--     <style name="WrapLabView">-->
+<!--         <attr name="marginTop">0</attr>-->
+<!--         <attr name="marginBottom">15</attr>-->
+<!--         <attr name="minHeight">50</attr>-->
+<!--         <attr name="flex">1</attr>-->
+<!--         <attr name="flexDirection">row</attr>-->
+<!--         <attr name="justifyContent">center</attr>-->
+<!--     </style>-->
+        
+    <!--- 内部布局的 lab 父类  最低高度30  -->
+     <style name="WrapLabViewMid">
+<!--         <attr name="marginTop">5</attr>-->
+<!--         <attr name="marginBottom">5</attr>-->
+        <attr name="paddingTop">8</attr>
+        <attr name="paddingBottom">8</attr>
+         <attr name="minHeight">25</attr>
+         <attr name="flex">1</attr>
+     </style>
+    
+    <style name="WrapLabCellInfo">
+        <attr name="marginTop">5</attr>
+        <attr name="marginBottom">5</attr>
+        <attr name="minHeight">15</attr>
         <attr name="flex">1</attr>
     </style>
+    <!--- 内部布局的 lab 垂直布局  -->
+     <style name="WrapLabVerView">
+         <attr name="paddingTop">2</attr>
+         <attr name="paddingBottom">10</attr>
+         <attr name="paddingLeft">10</attr>
+         <attr name="paddingRight">10</attr>
+         <attr name="minHeight">50</attr>
+         <attr name="flex">1</attr>
+         <attr name="justifyContent">center</attr>
+     </style>
+        
     
-
-    <!--   订单详情里面的lab最小高度  CJWrapDetailLabView-->
-    <style name="CJWrapDetailLabView">
-       <!--   <attr name="minHeight">25</attr> -->
-        <attr name="marginTop">10</attr>
-        <attr name="marginBottom">10</attr>
-
+    
+    <!--   切圆角 5 -->
+    <style name="CornerFive">
+        <attr name="layerCornerRadius">5</attr>
+        <attr name="clipsToBounds">true</attr>
     </style>
     
+    <!--   切圆角 3 -->
+    <style name="CornerThree">
+        <attr name="layerCornerRadius">3</attr>
+        <attr name="clipsToBounds">true</attr>
+    </style>
 
-    
     <!--- 提交的一按钮  样式  -->
-    <style name="CJTouchSubmintConfig">
-        <attr name="marginLeft">15</attr>
-        <attr name="marginRight">15</attr>
-        <attr name="marginTop">30</attr>
-        <attr name="height">48</attr>
+    <style name="TouchSubmintConfig">
+        <attr name="marginLeft">0</attr>
+        <attr name="marginRight">0</attr>
+        <attr name="marginTop">20</attr>
+        <attr name="height">50</attr>
         <attr name="justifyContent">center</attr>
     </style>
     
     
-    <style name="CJBorderLine">
-<!--        #E4E9ED-->
-        <attr name="borderColor">#E4E9ED</attr>
-        <attr name="masksToBounds">true</attr>
-        <attr name="borderWidth">0.5</attr>
-        <attr name="borderRadius">5</attr>
-    </style>
-    
-    <!--  切15的圆角-->
-
-    <style name="CJBorderCirLine">
-<!--        #E4E9ED-->
-        <attr name="borderColor">#E4E9ED</attr>
-        <attr name="masksToBounds">true</attr>
-        <attr name="borderWidth">0.5</attr>
-        <attr name="borderRadius">15</attr>
-    </style>
-    
-    <style name="CJBorderMainColorLine">
-
+    <style name="BorderMainColorLine">
         <attr name="borderColor">#2D7DF6</attr>
         <attr name="masksToBounds">true</attr>
         <attr name="borderWidth">0.5</attr>
         <attr name="borderRadius">5</attr>
     </style>
-
-    <!--   切角 5  -->
-    <style name="CJLayerCornerRFive">
-        <attr name="layerCornerRadius">5</attr>
-        <attr name="clipsToBounds">true</attr>
-    </style>
-    <!--   切角 5  -->
-    <style name="CJLayerCornerRTwo">
-        <attr name="layerCornerRadius">2</attr>
-        <attr name="clipsToBounds">true</attr>
-    </style>
     
     
-
-    <!---  主题色字体 --> <!--一些基础颜色-->
-    <style name="CJMainColorText">
-        <attr name="color">#2D7DF6</attr>
-    </style>
     
-    <style name="CJMainTextColor">
-        <attr name="color">#3A425C</attr>
-    </style>
+    <!--    委托中心的操作按钮  -->
     
-    <style name="CJSubheadTextColor">
-        <attr name="color">#96A0B9</attr>
-    </style>
-    
-    <style name="CJButtonColor">
-        <attr name="color">#2D7DF6</attr>
-    </style>
-    
-    <style name="CJMainColor">
-        <attr name="color">#2D7DF6</attr>
-    </style>
-    
-    
-    <style name="CJMarkedBlueColor">
-        <attr name="color">#2D7DF6</attr>
-    </style>
-    
-    <style name="CJMainBGColor">
-        <attr name="bgColor">#2D7DF6</attr>
-    </style>
-    
-    <style name="CJBackgroundColor">
-        <attr name="bgColor">#f3f8ff</attr>
-    </style>
-    
-    <style name="CJLineBackGroundColor">
-        <attr name="bgColor">#EBEBEB</attr>
-    </style>
-
-    <style name="CJMainBorderColor">
-        <attr name="borderColor">#2D7DF6</attr>
-    </style>
-    
-    <style name="CJbgColorWhite">
-        <attr name="bgColor">white</attr>
-    </style>
-    
-    
-<!--  基础距离  -->
-<!--,height-->
-    <style name="CJToTopHeight">
-        <attr name="height">5</attr>
-    </style>
-    
-    <style name="CJToLeftView">
-        <attr name="height">10</attr>
-    </style>
-    
-    <style name="CJLineHeight">
-        <attr name="height">0.5</attr>
-        <attr name="marginTop">1</attr>
-        <attr name="marginBottom">1</attr>
-
-    </style>
-
-    
-    <!--view之间的间距-->
-    <style name="CJToViewMarginH">
-        <attr name="height">10</attr>
-    </style>
-    
-    <!--图片尺寸-->
-    <style name="CJIcon">
-        <attr name="width">35</attr>
-        <attr name="height">35</attr>
-    </style>
-    
-    <style name="CJIconMid">
-        <attr name="width">25</attr>
-        <attr name="height">25</attr>
-    </style>
-    <style name="CJIconMin">
-        <attr name="width">20</attr>
-        <attr name="height">20</attr>
-    </style>
-    <style name="CJIconCheYuan">
-        <attr name="width">20</attr>
-        <attr name="height">20</attr>
-    </style>
-        <!--7-->
-    <style name="CJIconSeven">
-        <attr name="width">7</attr>
-        <attr name="height">7</attr>
-    </style>
-    
-    <style name="CJIconSelect">
-        <attr name="width">15</attr>
-        <attr name="height">15</attr>
-    </style>
-    
-    <style name="CJIconMax">
-        <attr name="width">50</attr>
-        <attr name="height">50</attr>
-    </style>
-    
-    <style name="CJIconChePai">
-        <attr name="width">18</attr>
-        <attr name="height">13</attr>
-    </style>
-    
-    <!--订单b列表的按钮尺寸-->
-    <style name="CJIconListBtn">
-        <attr name="width">17</attr>
-        <attr name="height">17</attr>
-    </style>
-    
-
-    
-    <style name="CJIconZX">
-        <attr name="width">22</attr>
-        <attr name="height">26</attr>
-    </style>
-    
-    <style name="CJIconRight">
-        <attr name="width">6</attr>
-        <attr name="height">10</attr>
-    </style>
-    
-    <style name="CJIconDown">
-        <attr name="width">9</attr>
-        <attr name="height">6</attr>
-    </style>
-    
-    <!--订单b列表的按钮的间距gaudy尺寸-->
-    <style name="CJListBtnConfig">
-        <attr name="minHeight">40</attr>
-        <attr name="marginRight">15</attr>
-     <!--  <attr name="width">25%</attr> -->
-    </style>
-    
-    <style name="CJListBtnConfigLine">
-<!--        #E4E9ED-->
-        <attr name="borderColor">#E4E9ED</attr>
-        <attr name="masksToBounds">true</attr>
-        <attr name="borderWidth">0.5</attr>
-        <attr name="borderRadius">15</attr>
-    </style>
-    
-    
-    <style name="CJListViewBtnConfig">
-        <attr name="minHeight">5</attr>
-       
-     <!--  <attr name="width">25%</attr> -->
-    </style>
-    
-<!--  文本距离 上下左右  -->
-
-  <!--- 下单页面的约束  -->
-  <style name="CJSendGoodsViewHeight">
-      <attr name="height">35</attr>
-  </style>
-  
-  <!---  距离左右两侧的距离 -->
-  <style name="CJWrapMarginRL">
-      <attr name="marginLeft">15</attr>
-      <attr name="marginRight">15</attr>
-  </style>
-  
-  <!---  距离上下两侧的距离15  -->
-  <style name="CJWrapMarginTB">
-      <attr name="marginBottom">15</attr>
-      <attr name="marginTop">15</attr>
-  </style>
-
-
-    <style name="CJMarginTopTen">
-        <attr name="marginTop">10</attr>
-    </style>
-    <style name="CJMarginTopFive">
-        <attr name="marginTop">5</attr>
-    </style>
-
-    
-    <style name="CJMarginBottomFive">
-        <attr name="marginBottom">5</attr>
-    </style>
-    
-    <style name="CJMarginBottomTen">
-        <attr name="marginBottom">10</attr>
-    </style>
-    
-    <style name="CJMarginLeftTen">
-        <attr name="marginLeft">10</attr>
-    </style>
-    <style name="CJMarginLeftFive">
-        <attr name="marginLeft">5</attr>
-    </style>
-    
-    <style name="CJMarginRightTen">
+    <style name="ListBtnConfig">
+        <attr name="justifyContent">center</attr>
+        <attr name="height">30</attr>
         <attr name="marginRight">10</attr>
     </style>
-    <style name="CJMarginRightFive">
-        <attr name="marginRight">5</attr>
+    
+    <style name="ListBtnConfigLine">
+        <attr name="borderColor">#2D7DF6</attr>
+        <attr name="masksToBounds">true</attr>
+        <attr name="borderWidth">0.5</attr>
+        <attr name="borderRadius">15</attr>
     </style>
     
-
+    
+<!--    切角-->
+    <style name="BorderCirLine">
+        <attr name="borderColor">#E4E9ED</attr>
+        <attr name="masksToBounds">true</attr>
+        <attr name="borderWidth">0.5</attr>
+        <attr name="borderRadius">5</attr>
+    </style>
+    
+<!-- 列表 功能按钮的配置   -->
+    <style name="ListBtnConfig">
+        <attr name="borderColor">#E4E9ED</attr>
+        <attr name="masksToBounds">true</attr>
+        <attr name="borderWidth">0.5</attr>
+        <attr name="borderRadius">5</attr>
+    </style>
+    
+    <!-- 列表 功能lab配置   -->
+    <style name="ListBtnLab">
+        <attr name="fontSize">13</attr>
+        <attr name="color">#3A425C</attr>
+        <attr name="textAlign">center</attr>
+        <attr name="linesNum">0</attr>
+    </style>
+    
 </styles>
 

@@ -2,7 +2,7 @@
 //  UIColor+JMExtension.m
 //  jinyingmeileNative
 //
-//  Created by zcj on 02/01/2017.
+//  Created by admin on 02/01/2017.
 //  Copyright © 2017 Jinyingmeile. All rights reserved.
 //
 

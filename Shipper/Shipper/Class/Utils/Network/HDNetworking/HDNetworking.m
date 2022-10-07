@@ -210,7 +210,7 @@ HDSingletonM(HDNetworking) // 单例实现
     
     @weakify(self);
 //    NSURLSessionDataTask *dataTask = [[self createSessionMangerWithHeader] dataTaskWithHTTPMethod:strNetType URLString:urlString parameters:parameters headers:nil uploadProgress:nil downloadProgress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NLog(@"\n[%@]\n%@\n参数:\n%@\n响应:\n%@", @"接口", urlString, parameters, [responseObject jsonPrettyStringEncoded]);
+//        DLog(@"\n[%@]\n%@\n参数:\n%@\n响应:\n%@", @"接口", urlString, parameters, [responseObject jsonPrettyStringEncoded]);
 //
 //        @strongify(self);
 //        [self cancleDelayCarryOut];
@@ -245,7 +245,7 @@ HDSingletonM(HDNetworking) // 单例实现
 //            return;
 //        }
 //
-//        if (handleType == ArpaDefault) {
+//        if (handleType == DefaultData) {
 //            if (IsNilOrNull(responseObject[@"data"])) {
 //                success(@"");
 //            }else{
@@ -326,7 +326,7 @@ HDSingletonM(HDNetworking) // 单例实现
 //                                               uploadProgress:nil
 //                                             downloadProgress:nil
 //                                            completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-//        NLog(@"\n[%@]\n%@\n参数:\n%@\n响应:\n%@", @"接口", urlString, parameter, [responseObject jsonPrettyStringEncoded]);
+//        DLog(@"\n[%@]\n%@\n参数:\n%@\n响应:\n%@", @"接口", urlString, parameter, [responseObject jsonPrettyStringEncoded]);
 //        @strongify(self);
 //        [self cancleDelayCarryOut];
 //        [CJAlert dismiss];
@@ -363,7 +363,7 @@ HDSingletonM(HDNetworking) // 单例实现
 //                return;
 //            }
 //
-//            if (handleType == ArpaDefault) {
+//            if (handleType == DefaultData) {
 //                if (IsNilOrNull(responseObject[@"data"])) {
 //                    success(@"");
 //                }else{

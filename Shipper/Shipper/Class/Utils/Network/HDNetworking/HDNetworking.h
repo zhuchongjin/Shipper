@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, NetWorkType) {
  */
 typedef NS_ENUM(NSUInteger, DataHandleType) {
 
-    ArpaDefault = 0,  // 阿帕默认
+    DefaultData = 0,  // 默认数据
     OperationTip, // 操作提示 交互反馈
     ReturnAllData, //返回所有数据
 };

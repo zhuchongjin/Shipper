@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<styles>
+
+    <!---   -->
+<!--    <style name="CJWrapView">-->
+<!--        <attr name="marginLeft">15</attr>-->
+<!--        <attr name="marginRight">15</attr>-->
+<!--        <attr name="marginTop">10</attr>-->
+<!--        <attr name="marginBottom">10</attr>-->
+<!--    </style>-->
+  
+  
+<!--  padding 5的宽度  -->
+    <style name="LPFive">
+        <attr name="paddingLeft">5</attr>
+    </style>
+   
+   <style name="RPFive">
+       <attr name="paddingRight">5</attr>
+   </style>
+   
+   <style name="LRPFive">
+       <attr name="paddingLeft">5</attr>
+       <attr name="paddingRight">5</attr>
+   </style>
+   
+   
+<!--   padding10-->
+    <style name="LPTen">
+        <attr name="paddingLeft">10</attr>
+    </style>
+
+    <style name="RPTen">
+        <attr name="paddingRight">10</attr>
+    </style>
+    
+    <style name="LRPTen">
+        <attr name="paddingLeft">10</attr>
+        <attr name="paddingRight">10</attr>
+    </style>
+    
+    
+  
+  <!--   5的宽度  -->
+      <style name="LFive">
+          <attr name="marginLeft">5</attr>
+      </style>
+     
+     <style name="RFive">
+         <attr name="marginRight">5</attr>
+     </style>
+     
+     <style name="LRFive">
+         <attr name="marginLeft">5</attr>
+         <attr name="marginRight">5</attr>
+     </style>
+     
+  <!--   左右 10-->
+      <style name="LTen">
+          <attr name="marginLeft">10</attr>
+      </style>
+
+      <style name="RTen">
+          <attr name="marginRight">10</attr>
+      </style>
+      
+      <style name="LRTen">
+          <attr name="marginLeft">10</attr>
+          <attr name="marginRight">10</attr>
+      </style>
+  
+  
+      <!--  上下5   -->
+      <style name="TFive">
+          <attr name="marginTop">5</attr>
+      </style>
+
+      <style name="BFive">
+          <attr name="marginBottom">5</attr>
+      </style>
+      
+      <style name="TBFive">
+          <attr name="marginTop">5</attr>
+          <attr name="marginBottom">5</attr>
+      </style>
+  
+  
+      <!--  上下10   -->
+      <style name="TTen">
+          <attr name="marginTop">10</attr>
+      </style>
+
+      <style name="BTen">
+          <attr name="marginBottom">10</attr>
+      </style>
+      
+      <style name="TBTen">
+          <attr name="marginTop">10</attr>
+          <attr name="marginBottom">10</attr>
+      </style>
+      
+
+      <!--   左右 15-->
+      <style name="LFifteen">
+          <attr name="marginLeft">15</attr>
+      </style>
+
+      <style name="RFifteen">
+          <attr name="marginRight">15</attr>
+      </style>
+      
+      <style name="LRFifteen">
+          <attr name="marginLeft">15</attr>
+          <attr name="marginRight">15</attr>
+      </style>
+      
+     
+     <!--  上下15   -->
+     <style name="TFifteen">
+         <attr name="marginTop">15</attr>
+     </style>
+
+     <style name="BFifteen">
+         <attr name="marginBottom">15</attr>
+     </style>
+     
+     <style name="TBFifteen">
+         <attr name="marginTop">15</attr>
+         <attr name="marginBottom">15</attr>
+     </style>
+     
+     
+     
+    
+      <!--view之间的间距 10-->
+      <style name="ViewMHTen">
+          <attr name="height">10</attr>
+      </style>
+      
+      <!--view之间的间距 15-->
+      <style name="ViewMHFifteen">
+          <attr name="height">15</attr>
+      </style>
+      
+      
+<!--   分割线   -->
+      <style name="LineHeight">
+          <attr name="height">0.5</attr>
+<!--          <attr name="marginTop">1</attr>-->
+<!--          <attr name="marginBottom">1</attr>-->
+          <attr name="marginTop">3</attr>
+          <attr name="marginBottom">2</attr>
+      </style>
+      
+      
+  <!-- 列表 功能按钮的配置   -->
+      <style name="ListBtnConfig">
+          <attr name="flex">1</attr>
+          <attr name="marginRight">10</attr>
+      </style>
+  
+  
+  <style name="TextView">
+      <attr name="flex">1</attr>
+      <attr name="maxHeight">60</attr>
+      <attr name="minHeight">30</attr>
+  </style>
+ 
+</styles>
+

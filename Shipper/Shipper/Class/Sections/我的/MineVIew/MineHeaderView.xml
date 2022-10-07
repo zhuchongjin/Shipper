@@ -1,45 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UIView layout="flex:1" attr="bgColor:clear">
     
-    <FlexTouchView onPress="btnTouchViewMineHeaderAction"  layout="width:100% ,minHeight:240" attr="">
-        <UIImageView layout = "flex:1 " attr="source:zcj_mine_header_bg ,userInteractionEnabled:true">
+    <FlexTouchView onPress="btnTouchViewMineHeaderAction"  layout="width:100% ,minHeight:220" attr="">
+        <UIImageView layout = "flex:1 " attr="userInteractionEnabled:true ,@:color/MainBGColor">
             <!-- title -->
             <UILabel layout="marginTop:40 ,width:100%" attr="fontSize:17,color:white,textAlign:center ,text:我的"/>
             <UIView layout="width:100% ,height:67.5 ,flexDirection:row ,marginTop:20" attr="">
                 <CJImageView  name = "imgVheader" layout = "marginLeft:35 ,width:68 ,aspectRatio:1" attr="source:zcj_default_person_icon ,masksToBounds:true ,layerCornerRadius:34"/>
                 <CJView layout="marginLeft:14 ,flex:1" attr="">
-                    <CJLabel name="labName" layout="marginTop:14" attr="@:view/CJLabelBase ,text:登录 ,fontSize:18 ,color:white"/>
-                    <CJLabel name="labPhone" layout="marginTop:5" attr="@:view/CJLabelBase ,text:手机号 ,fontSize:15 ,color:white"/>
+                    <CJLabel name="labName" layout="marginTop:14" attr="@:view/LabelBase ,text:登录 ,fontSize:18 ,color:white"/>
+                    <CJLabel name="labPhone" layout="marginTop:5" attr="@:view/LabelBase ,text:手机号 ,fontSize:15 ,color:white"/>
                 </CJView>
-
                 <FlexTouchView onPress="btnTouchViewMineHeaderAction" layout="minWidth:80 ,height:100% ,justifyContent:center" attr="">
                     <UIView name="viewPersonInfo" layout="height:30 ,flexDirection:row ,justifyContent:center ,alignContent:center" attr="bgColor:white">
-                        <UILabel name="" layout="@:CJDis/LTen" attr="fontSize:14,color:white,text:个人信息"/>
-                        <UIView layout="height:100% ,justifyContent:center ,alignContent:center ,@:CJDis/LFive" attr="">
+                        <UILabel name="" layout="@:dis/LTen" attr="fontSize:14,color:white,text:个人信息"/>
+                        <UIView layout="height:100% ,justifyContent:center ,alignContent:center ,@:dis/LFive" attr="">
                             <UIImageView layout="width:6 ,height:10.5" attr="source:zcj_back_rigt_white"/>
                         </UIView>
                     </UIView>
                 </FlexTouchView>
-
             </UIView>
-
         </UIImageView>
     </FlexTouchView>
-
-    <UIView layout="flex:1,flexDirection:row ,marginTop:-50" attr="bgColor:clear">
-
-        <FlexTouchView onPress="btnTouchFinsihOrderNumsAction" layout="@:CJView/WrapLabVerView ,@:CJDis/LFifteen" attr="@:CJView/CornerFive ,bgColor:white">
-            <CJLabel name="labFinsihOrderNums" layout="" attr="@:view/CJLabelBase,text:0 ,textAlign:center ,fontSize:24 ,@:CJColour/MainColorText"/>
-            <UILabel layout="marginTop:10" attr="@:CJView/LabelBase,text:已完成运单,textAlign:center ,fontSize:14"/>
-        </FlexTouchView>
-
-        <FlexTouchView onPress="btnTouchUnfinshOrderNumsAction" layout="@:CJView/WrapLabVerView ,@:CJDis/LRFifteen" attr="@:CJView/CornerFive ,bgColor:white">
-            <CJLabel name="labUnfinsihOrderNums" layout="" attr="@:view/CJLabelBase,text:0 ,textAlign:center ,fontSize:24 ,@:CJColour/MainColorText"/>
-            <UILabel layout="marginTop:10" attr="@:CJView/LabelBase,text:未完成运单,textAlign:center ,fontSize:14"/>
-        </FlexTouchView>
-      
-    </UIView>
-
-    <UIView layout="@:CJDis/ViewMHFifteen" attr="@:view/CJBackgroundColor" />
 
 </UIView>

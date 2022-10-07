@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:clear">
+    <UIView name="viewBG" layout="flex:1 ,paddingLeft:15 ,paddingRight:15 ,height:350" attr="bgColor:red">
+       
+    </UIView>
+</UIView>

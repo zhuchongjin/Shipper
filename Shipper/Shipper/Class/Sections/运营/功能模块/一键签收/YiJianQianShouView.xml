@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+   
+    <UIView class="" layout="@:view/WrapViewPadding  ,marginTop:10" attr="bgColor:white ,@:view/BorderCirLine">
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:货物类型："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:666666"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:货物名称："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:666666"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:货物数量："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:666666"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:签收时间："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:666666"/>
+        </UIView>
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+    
+    </UIView>
+
+</UIView>

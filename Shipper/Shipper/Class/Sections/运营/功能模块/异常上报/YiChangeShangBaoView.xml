@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+   
+    <UIView class="" layout="@:view/WrapViewPadding  ,marginTop:10" attr="bgColor:white ,@:view/BorderCirLine">
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:异常订单号："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:666666"/>
+        </UIView>
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:异常原因："/>
+            <FlexTextView name="" class="" layout="@:dis/TextView" attr="@:view/TextViewBase ,placeholder:请输入异常原因"/>
+        </UIView>
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:备注："/>
+            <FlexTextView name="" class="" layout="@:dis/TextView" attr="@:view/TextViewBase ,placeholder:请输入备注"/>
+        </UIView>
+
+        <UIView class="" layout="flex:1 ,alignItems:center ,marginTop:40 ,marginBottom:40 ,justifyContent:space-between ,flexDirection:row" attr="">
+            <FlexTouchView onPress="" layout="width:40% ,height:35" attr="@:color/MainBGColor ,@:view/CornerFive">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:取消 ,color:white ,fontSize:15 ,textAlign:center"/>
+            </FlexTouchView>
+            <FlexTouchView onPress="" layout="width:40% ,height:35" attr="@:color/MainBGColor ,@:view/CornerFive">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:确认上报 ,color:white ,fontSize:15 ,textAlign:center"/>
+            </FlexTouchView>
+        </UIView>
+
+
+    </UIView>
+
+</UIView>

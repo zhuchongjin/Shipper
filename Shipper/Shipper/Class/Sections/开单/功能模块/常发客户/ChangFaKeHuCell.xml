@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+    <UIView class="" layout="@:view/WrapViewPadding ,flexDirection:row" attr="bgColor:white ,@:view/BorderCirLine">
+        <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:123项目"/>
+        <FlexTouchView onPress="touchSelectAction" layout="@:dis/LTen" attr="@:color/MainBGColor ,@:view/CornerFive">
+            <UILabel name="" class="" layout="marginLeft:5 ,marginTop:5 ,marginRight:5 ,marginBottom:5" attr="@:view/LabelBase ,text:选择路线 ,color:white"/>
+        </FlexTouchView>
+    </UIView>
+</UIView>
+
+

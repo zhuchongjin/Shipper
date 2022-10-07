@@ -121,7 +121,7 @@
     
 //    CJSendNotify(CJJpushOrder, nil);
     
-    DLog(@"===============收到推送")
+    DLog(@"===============收到推送");
 }
 //注册APNs成功并上报DeviceToken
 - (void)application:(UIApplication *)application
@@ -242,7 +242,7 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
     }
     completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
     
-    DLog(@"===============收到推送")
+    DLog(@"===============收到推送");
 
 }
 
@@ -258,7 +258,7 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
     UNNotificationSound *sound = content.sound;  // 推送消息的声音
     NSString *subtitle = content.subtitle;  // 推送消息的副标题
     NSString *title = content.title;  // 推送消息的标题
-    DLog(@"===============收到推送")
+    DLog(@"===============收到推送");
 
     
     if (@available(iOS 10.0, *)) {

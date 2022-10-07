@@ -2,7 +2,7 @@
 //  CommonMacro.h
 //  临沂
 //
-//  Created by zcj on 2017/11/7.
+//  Created by admin on 2017/11/7.
 //  Copyright © 2017 xiaoruiyun.com. All rights reserved.
 //
 
@@ -78,14 +78,16 @@ selector:_selector name:_name object:nil];
 
 
 #ifdef DEBUG
-#define NLog(format, ...) printf("^^类名:<地址:%p 控制器:%s:(行号:%d) > \n^^方法名:%s \n^^打印内容:%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+#define DLog(format, ...) printf("^^类名:<地址:%p 控制器:%s:(行号:%d) > \n^^方法名:%s \n^^打印内容:%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
 #else
-#define NLog(format, ...)
+#define DLog(format, ...)
 #endif
+
+
 /**
  *  弱指针
  */
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+//#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 // 存取 shan
 #define CJSaveMyDefault(key,value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key] 

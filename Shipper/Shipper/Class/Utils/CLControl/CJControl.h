@@ -11,7 +11,7 @@
 
 @interface CJControl : NSObject
 
-+(void)clearAllUserDefaultsData;
+//+(void)clearAllUserDefaultsData;
 
 #pragma mark ----------登录返回信息处理-------
 
@@ -22,6 +22,6 @@
 ///// @param idx <#str description#>
 //+ (NSString *)getString:(id)idx;
 
-+ (UIViewController *)getCurrentViewController;
+//+ (UIViewController *)getCurrentViewController;
 
 @end

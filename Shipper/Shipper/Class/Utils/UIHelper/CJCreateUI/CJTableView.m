@@ -51,8 +51,8 @@
 //                self.estimatedSectionFooterHeight = 0;
 //            }
 //            [self setSeparatorColor:[UIColor cjBackgroundColor]];
-//            self.contentInset = UIEdgeInsetsMake(0, 0, 85+SafeAreaBottomHeight, 0);
-//            self.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 85+SafeAreaBottomHeight, 0);
+//            self.contentInset = UIEdgeInsetsMake(0, 0, 85+kBottomSafeHeight, 0);
+//            self.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 85+kBottomSafeHeight, 0);
 ////            self.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
             
             self.showsVerticalScrollIndicator = NO;
@@ -70,8 +70,8 @@
                 self.estimatedSectionFooterHeight = 0;
             }
             [self setSeparatorColor:[UIColor cjBackgroundColor]];
-            self.contentInset = UIEdgeInsetsMake(0, 0, 85+SafeAreaBottomHeight, 0);
-            self.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 85+SafeAreaBottomHeight, 0);
+            self.contentInset = UIEdgeInsetsMake(0, 0, 85+kBottomSafeHeight, 0);
+            self.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 85+kBottomSafeHeight, 0);
             self.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
             
             
@@ -100,14 +100,13 @@
         
         if (mjHeadFooter) {
             //创建一个下拉刷新的头
-            WS(ws);
+            @weakify(self);
             MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
                 //       下拉刷新
                 //            [self downRefresh];
-                DLog(@"++++++++++");
-                
-                if (ws.blockMjHeader) {
-                    ws.blockMjHeader(YES);
+                @strongify(self);
+                if (self.blockMjHeader) {
+                    self.blockMjHeader(YES);
                 }
             }];
             [header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
@@ -118,11 +117,10 @@
             
             MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
                 //            [self upRefresh];
-                if (ws.blockMjHeader) {
-                    ws.blockMjHeader(NO);
+                @strongify(self);
+                if (self.blockMjHeader) {
+                    self.blockMjHeader(NO);
                 }
-                
-                
             }];
             [footer setTitle:@"上拉刷新" forState:MJRefreshStateIdle];
             [footer setTitle:@"松开刷新" forState:MJRefreshStatePulling];
@@ -145,14 +143,14 @@
         
         if (mjHeader) {
             //创建一个下拉刷新的头
-            WS(ws);
+            @weakify(self);
             MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
                 //       下拉刷新
                 //            [self downRefresh];
                 DLog(@"++++++++++");
-                
-                if (ws.blockMjHeader) {
-                    ws.blockMjHeader(YES);
+                @strongify(self);
+                if (self.blockMjHeader) {
+                    self.blockMjHeader(YES);
                 }
             }];
             [header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];

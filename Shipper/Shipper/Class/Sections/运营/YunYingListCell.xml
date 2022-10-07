@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+    <UIView class="" layout="@:view/WrapViewPadding ,paddingTop:0 ,marginTop:0 " attr="bgColor:white ,@:view/BorderCirLine">
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:订单号：66666"/>
+            <UILabel name="labName" class="" layout="@:dis/LTen" attr="@:view/LabelBase ,@:color/MainColor , fontSize:15 ,text:配送中"/>
+        </UIView>
+
+        <UIView class="" layout="flex:1" attr="">
+            <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:起运地起运地起运地起运地起运地起运地起运地起运地起运地起运地起运地起"/>
+            </UIView>
+            <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:详细地址"/>
+            </UIView>
+            <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:详细地址"/>
+            </UIView>
+            <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:详细地址"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="@:dis/LineHeight" attr="@:color/BackgroundColor" />
+
+        <FlexScrollView class="" layout="flex:1 ,height:30 ,flexDirection:row ,marginTop:8" attr="horzScroll:true ,alwaysBounceHorizontal:true ,horzIndicator:false">
+            <FlexTouchView name = "touchQuXiao" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchQuXiaoAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:订单取消 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchXiuGai" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchXiuGaiAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:订单修改 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchYiChang" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchYiChangAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:异常上报 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchZhiPai" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchZhiPaiAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:指派车辆 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchYiJianQianShou" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchYiJianQianShouAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:一键签收 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchPingJia" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchPingJiaAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:评价司机 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchQueRenQianshou" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchQueRenQianshouAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:确认签收 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchHuiDan" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchHuiDanAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:回单上传 "/>
+            </FlexTouchView>
+            <FlexTouchView name = "touchHuiDanChaKan" layout="@:dis/ListBtnConfig" attr="@:view/ListBtnConfig" onPress="touchHuiDanChaKanAction" >
+                <UILabel layout="flex:1 ,@:dis/LTen ,@:dis/RTen" attr="@:view/ListBtnLab ,text:回单查看 "/>
+            </FlexTouchView>
+        </FlexScrollView>
+
+    </UIView>
+</UIView>

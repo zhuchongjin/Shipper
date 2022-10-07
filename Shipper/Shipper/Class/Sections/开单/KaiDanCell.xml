@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+    <UIView class="" layout="@:view/WrapViewPadding ,paddingTop:0 ,marginTop:0 ,marginBottom:0 " attr="bgColor:white ,@:view/BorderCirLine">
+        <!-- <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:123项目"/> -->
+
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="labName" class="" layout="flex:1" attr="@:view/LabelBase ,@:color/MainColor , fontSize:15 ,text:起运地"/>
+            <FlexTouchView onPress="touchViewAddAdress" layout="justifyContent:center ,alignContent:center ,height:100%" attr="bgColor:red">
+                <UIImageView layout="@:iconSize/Right ,marginLeft:10 ,marginRight:10" attr="source:zcj_back_rigt_gray"/>
+            </FlexTouchView>
+        </UIView>
+
+        <UIView class="" layout="flex:1 ,flexDirection:row" attr="">
+            <UIView class="" layout="flex:1" attr="">
+                <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                    <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:起运地起运地起运地起运地起运地起运地起运地起运地起运地起运地起运地起"/>
+                </UIView>
+                <UIView class="" layout="@:view/WrapLabViewMid" attr="">
+                    <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:详细地址"/>
+                </UIView>
+            </UIView>
+
+            <FlexTouchView onPress="" layout="justifyContent:center ,alignContent:center" attr="">
+                <UIImageView layout="@:iconSize/Right ,marginLeft:10 ,marginRight:10" attr="source:zcj_back_rigt_gray"/>
+            </FlexTouchView>
+        </UIView>
+      
+        
+    </UIView>
+</UIView>
+
+
+
+

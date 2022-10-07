@@ -31,32 +31,33 @@ static CJCheckVersion *_checkVersion = nil;
 
 - (void)checkVersion{
     
-    WS(ws);
+    @weakify(self);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:[CJAppInfo appUrlInItunes] parameters:nil headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         DLog(@"%@",responseObject);
+        @strongify(self);
         //请求成功？
         if (((NSArray *)responseObject[@"results"]).count<=0) {
             return;
         }
 
         // 获取trackId
-        ws.trackId = [(NSArray *)responseObject[@"results"] firstObject][@"trackId"];
+        self.trackId = [(NSArray *)responseObject[@"results"] firstObject][@"trackId"];
 //        DLog(@"trackId ==== %@",self.trackId);
         //获取appstore版本号和提示信息
-        ws.storeVersion = [(NSArray *)responseObject[@"results"] firstObject][@"version"];
+        self.storeVersion = [(NSArray *)responseObject[@"results"] firstObject][@"version"];
         NSString *releaseNotes = [(NSArray *)responseObject[@"results"] firstObject][@"releaseNotes"];
         //获取跳过的版本号
         NSString *skipVersion = [[NSUserDefaults standardUserDefaults] valueForKey:skipVersionKey];
         //比较版本号
         DLog(@"%@--%@",self.storeVersion,skipVersion);
-        if ([ws.storeVersion isEqualToString:skipVersion]) {//如果store和跳过的版本相同
+        if ([self.storeVersion isEqualToString:skipVersion]) {//如果store和跳过的版本相同
             return;
         }else{
-            [ws compareCurrentVersion:[CJAppInfo appVersion] withAppStoreVersion:self.storeVersion updateMsg:releaseNotes];
+            [self compareCurrentVersion:[CJAppInfo appVersion] withAppStoreVersion:self.storeVersion updateMsg:releaseNotes];
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -119,12 +120,13 @@ static CJCheckVersion *_checkVersion = nil;
 - (void)showUpdateAlertMust:(BOOL)must toskip:(BOOL)skip withStoreVersion:(NSString *)storeVersion message:(NSString *)message{
    
     NSString *title = [NSString stringWithFormat:@"最新版本:%@",storeVersion];
-    WS(ws);
+    @weakify(self);
     if (must) {
 
         UIAlertController *alertC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *updateAct = [UIAlertAction actionWithTitle:@"立即更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [ws openAppStoreToUpdate];
+            @strongify(self);
+            [self openAppStoreToUpdate];
         }];
         [alertC addAction:updateAct];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertC animated:YES completion:^{
@@ -151,7 +153,8 @@ static CJCheckVersion *_checkVersion = nil;
         
         UIAlertAction *updateAction = [UIAlertAction actionWithTitle:@"立即更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
 //            DLog(@"点击了立即更新");
-            [ws openAppStoreToUpdate];
+            @strongify(self);
+            [self openAppStoreToUpdate];
         }];
         [alertC addAction:updateAction];
 

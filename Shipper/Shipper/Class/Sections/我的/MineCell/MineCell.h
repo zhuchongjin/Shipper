@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MineCell : FlexBaseTableCell
-- (void)setCellInfoimgVHeader:(NSString *)strImg cellTitle:(NSString *)strTitle index:(NSInteger )index isOnShowAouth:(BOOL)show;
+- (void)setCellTitle:(NSString *)strTitle;
 @end
 
 NS_ASSUME_NONNULL_END

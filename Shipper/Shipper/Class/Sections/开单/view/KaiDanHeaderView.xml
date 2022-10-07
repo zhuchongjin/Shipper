@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="@:color/BackgroundColor">
+    <UIView class="" layout="@:view/WrapView" attr="@:view/BorderCirLine">
+
+        <FlexTouchView onPress="touchXiangMuInforAction" layout="flex:1 ,flexDirection:row ,paddingTop:10 ,paddingBottom:10" attr="@:color/BackgroundColor">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:项目："/>
+            <UILabel name="" class="" layout="@:dis/RTen ,flex:1" attr="@:view/LabelBase ,text:99999999"/>
+            <UIView class="" layout="height:100% ,justifyContent:center" attr="">
+                <UIImageView layout="@:iconSize/Right" attr="source:zcj_back_rigt_gray"/>
+            </UIView>
+        </FlexTouchView>
+        <UIView class="" layout="paddingTop:10 ,paddingBottom:10,flexDirection:row" attr="bgColor:white">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:合同编号："/>
+            <UITextField name="" class="" layout="@:dis/RTen" attr="@:view/FiledBaseLeft ,placeholder:请输入合同编号"/>
+        </UIView>
+    </UIView>
+
+
+    <UIView class="" layout="@:view/WrapViewPadding " attr="bgColor:white ,@:view/BorderCirLine">
+        <!-- <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:123项目"/> -->
+
+        <UIView class="" layout="flex:1 ,flexDirection:row" attr="">
+            <UIView class="" layout="flex:1" attr=""/>
+            <FlexTouchView onPress="touchKeHuXinXiAction" layout="@:dis/LTen" attr="@:color/MainBGColor ,@:view/CornerFive">
+                <UILabel name="" class="" layout="marginLeft:10 ,marginTop:5 ,marginRight:10 ,marginBottom:5" attr="@:view/LabelBase ,text:常发客户 ,color:white"/>
+            </FlexTouchView>
+        </UIView>
+
+        <UIView class="" layout="paddingTop:10 ,paddingBottom:10,flexDirection:row" attr="bgColor:white">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:客户姓名："/>
+            <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:客户姓："/>
+        </UIView>
+
+        <UIView class="" layout="paddingTop:10 ,paddingBottom:10,flexDirection:row" attr="bgColor:white">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:电话："/>
+        </UIView>
+
+        <UIView class="" layout="paddingTop:10 ,paddingBottom:10,flexDirection:row" attr="bgColor:white">
+            <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:合同编号："/>
+            <UITextField name="" class="" layout="@:dis/RTen" attr="@:view/FiledBaseLeft ,placeholder:请输入合同编号"/>
+        </UIView>
+    </UIView>
+
+</UIView>
+

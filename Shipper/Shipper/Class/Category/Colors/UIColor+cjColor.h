@@ -2,7 +2,7 @@
 //  UIColor+cjColor.h
 //  ShipperMent
 //
-//  Created by zcj on 2022/9/28.
+//  Created by admin on 2022/9/28.
 //
 #import <UIKit/UIKit.h>
 

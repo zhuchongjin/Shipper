@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1 ,marginBottom:40" attr="@:color/BackgroundColor">
+   
+
+    <UIView class="" layout="paddingTop:0, paddingLeft:10 ,paddingBottom:10, marginLeft:15 ,marginRight:15,flexDirection:row ,paddingTop:10 ,alignItems:center" attr="bgColor:white ,@:view/BorderCirLine">
+        <UILabel name="" class="" layout="@:dis/LRten" attr="@:view/LabelBase ,text:保险价格："/>
+        <UITextField name="" class="" layout="@:dis/RTen ,flex:1" attr="@:view/FiledBaseLeft ,placeholder:请输入保险价格"/>
+    </UIView>
+  
+    <UIView class="" layout="@:view/WrapViewPadding " attr="">
+
+        <UIView class="" layout="@:view/WrapLabViewMid ,flexDirection:row" attr="">
+            <UILabel name="labName" class="" layout="flex:1" attr="@:view/LabelBase ,@:color/MainColor , fontSize:15 ,text:紧急单"/>
+            <FlexTouchView onPress="touchViewAddAdress" layout="justifyContent:center ,alignContent:center ,height:100%" attr="bgColor:red">
+                <UIImageView layout="@:iconSize/Right ,marginLeft:10 ,marginRight:10" attr="source:zcj_back_rigt_gray"/>
+            </FlexTouchView>
+         </UIView>
+
+        <UIView class="" layout="flex:1 ,alignItems:center ,marginTop:20" attr="">
+            <FlexTouchView onPress="createOrderAction" layout="width:100% ,height:45" attr="@:color/MainBGColor ,@:view/CornerFive">
+                <UILabel name="" class="" layout="flex:1" attr="@:view/LabelBase ,text:创建订单 ,color:white ,fontSize:17 ,textAlign:center"/>
+            </FlexTouchView>
+        </UIView>
+
+   
+    </UIView>
+
+</UIView>
+
+
